@@ -1,0 +1,1 @@
+export = function isFalsePrimitive(x: unknown): x is false

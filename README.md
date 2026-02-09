@@ -11,5 +11,6 @@ $ npm install @is-(unknown)/is-false
 var isFalse = require('@is-(unknown)/is-false');
 
 console.log(isFalse(false)) // true
+console.log(isFalse(Object(false))) // false
 console.log(isFalse('anything else')) // false
 ```

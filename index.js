@@ -1,5 +1,5 @@
 const falseValue = require("false-value")()
 
-module.exports = function (value) {
-  return value === falseValue
+module.exports = function isFalsePrimitive(x) {
+  return require("@10xly/strict-equals")(x, falseValue)
 }
